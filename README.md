@@ -50,35 +50,36 @@ I'm Using the LMIC stack as his with custom sketch, this one is under NDA for Ul
 Schematic
 =========
 
-![schematic](../blob/master/pictures/Mini-Lora-sch.png)  
 
 <img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-Lora-sch.png">
+
+<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/">
 
 
 Boards 
 ======
 
 **Top side**
-<img src="https://raw.githubusercontent.com/hallard/Mini-LoRa/master/pictures/Mini-LoRa-top.jpg" alt="PCB Top">    
+<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-top.jpg">
 
 **Top side Grove**
-<img src="https://raw.githubusercontent.com/hallard/Mini-LoRa/master/pictures/Mini-LoRa-Grove-top.jpg" alt="PCB Top">    
+<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-Grove-top.jpg">
 
 **Bottom side**
-<img src="https://raw.githubusercontent.com/hallard/Mini-LoRa/master/pictures/Mini-LoRa-bot.jpg" alt="PCB Bottom">    
+<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-bot.jpg">
 
 **Bottom side Grove**
-<img src="https://raw.githubusercontent.com/hallard/Mini-LoRa/master/pictures/Mini-LoRa-Grove-bot.jpg" alt="PCB Bottom">    
+<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-Grove-bot.jpg">
 
 You can order the PCB of this board at [PCBs.io][3]. PCBs.io give me some reward when you order my designed boards from their site. This is pretty good, because I can use these rewards to create and design new boards and order boards for a discounted price, so if you don't care about PCB manufacturer please use PCBs.io.
 
 Assembled boards with sensors
 =============================
 
-<img src="https://raw.githubusercontent.com/hallard/Mini-LoRa/master/pictures/Mini-LoRa-FrontBig.jpg" alt="Fully assembled with sensors">     
+<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-FrontBig.jpg" alt="Fully assembled with sensors">
 
 Sensors values en Cayenne
-<img src="https://raw.githubusercontent.com/hallard/Mini-LoRa/master/pictures/Mini-LoRa-Cayenne.jpg" alt="Monitoring with external sensors">     
+<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-Cayenne.jpg" alt="Monitoring with external sensors">
 
 
 Bill Of Material
