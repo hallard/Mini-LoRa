@@ -50,10 +50,9 @@ I'm Using the LMIC stack as his with custom sketch, this one is under NDA for Ul
 Schematic
 =========
 
-![schematic](https://raw.githubusercontent.com/hallard/Mini-LoRa/master/pictures/Mini-LoRa-sch.png)  
+![schematic](../blob/master/pictures/Mini-Lora-sch.png)  
 
-<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-sch.png">
-
+<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-Lora-sch.png">
 
 
 Boards 
