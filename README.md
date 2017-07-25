@@ -45,15 +45,13 @@ No specific documentation for now, it's just a kind of wiring helper as follow
 Installation
 ============
 
-If you're using Battery clip connector, please isolate the A4/A5 and FTDI pads from clip because it will do shorts and prevent I2C to work.
+If you're using Battery clip connector, please isolate the A4/A5 and FTDI (V1.0 only) pads from clip because it will do shorts and prevent I2C to work.
 
-I'm Using the [LMIC stack](https://github.com/matthijskooijman/arduino-lmic) as his with custom sketch, this one is under NDA for Ultra Low Power, So I can't provide it but you can use the one in example of LMIC 
+I'm Using the [LMIC stack](https://github.com/matthijskooijman/arduino-lmic) as his with custom sketch, this one is under NDA for Ultra Low Power, So I can't provide it but you can use the one in example of LMIC.
 
-You may need to disable debug of LMIC stack if missing 
+You may need to disable debug of LMIC stack if missing.
 
-I'm also changing the Bootloader to use optiboot and win 1.5K of flash code and setup the Brown Out Detect to 1.8V to be able to works under 2.7V.
-
-See bootloader folder, I've compiled some for various Speed and for 8MHz and 16MHz Crystal (I use the 250KBPS one, it's fast and reliable).
+I'm also changing the Bootloader to use optiboot and win 1.5K of flash code and setup the Brown Out Detect to 1.8V to be able to works under 2.7V. Please see this [Pro-Mini-ICSP-FTDI](https://github.com/hallard/Pro-Mini-ICSP-FTDI) repo if you need to flash your Arduino Pro Mini with this bootloader. You'll see in [bootloader](https://github.com/hallard/Pro-Mini-ICSP-FTDI/tree/master/bootloaders) folder, I've compiled some for various Speed and for 8MHz and 16MHz Crystal (I use the 250KBPS one, it's fast and reliable).
 
 Schematic
 =========
@@ -63,16 +61,15 @@ Schematic
 Boards 
 ======
 
-**Top side**
+**Top & bottom side**
+
 <img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-top.jpg">
-
-**Top side Grove**
-<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-Grove-top.jpg">
-
-**Bottom side**
 <img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-bot.jpg">
 
-**Bottom side Grove**
+
+**Top & bottom side Grove**
+
+<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-Grove-top.jpg">
 <img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-Grove-bot.jpg">
 
 You can order the PCB of this board (V1.0) at [PCBs.io][3]. PCBs.io give me some reward when you order my designed boards from their site. This is pretty good, because I can use these rewards to create and design new boards and order boards for a discounted price, so if you don't care about PCB manufacturer please use PCBs.io.
@@ -107,7 +104,7 @@ use only what you need dependings on what you want to do.
     - PTH [CR123](https://www.digikey.com/product-detail/en/mpd-memory-protection-devices/BH123A/BH123A-ND/2817712)
 - Batteries
     - 3.0V Lithium [CR123](https://www.digikey.com/product-detail/en/panasonic-bsg/CR-123PE-BN/P703-ND/7064720)
-    - 3.6V Lithium Thionyle Chloride [2600mAh](http://fr.rs-online.com/web/p/piles-aa/2019438/))
+    - 3.6V Lithium Thionyle Chloride [2600mAh](http://fr.rs-online.com/web/p/piles-aa/2019438/)
     - 3.6V Lithium Thionyle Chloride [3600mAh](http://fr.rs-online.com/web/p/piles-aa/778-1087/)
 
 
