@@ -3369,7 +3369,7 @@ Mouser part: 534-1019</description>
 <part name="I2C" library="_c2h" deviceset="CON_HEADER_1X04" device="'NO_LOCK'" value="CON_HEADER_1X04'NO_LOCK'"/>
 <part name="NAME" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device="" value="Value">
 <attribute name="CNAME" value="Arduino Mini Lora Shield"/>
-<attribute name="CREVISION" value="1.1"/>
+<attribute name="CREVISION" value="1.1a"/>
 <attribute name="DESIGNER" value="Charles-Henri Hallard"/>
 </part>
 <part name="P+7" library="_c2h" deviceset="3V3-EXT" device="" value="3V3"/>
@@ -3402,8 +3402,6 @@ Mouser part: 534-1019</description>
 <part name="U$1" library="_c2h" deviceset="PAD-JUMPER-SWAP" device="SWAP"/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device="" value="3V3"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="P2" library="_c2h" deviceset="PAD" device="NORMAL"/>
-<part name="P3" library="_c2h" deviceset="PAD" device="NORMAL"/>
 <part name="U$6" library="_c2h" deviceset="ARDUINO_PRO_MINI" device=""/>
 <part name="RGB" library="_c2h" deviceset="RGBLED_CA" device="STRAIGHT" value="RGBLED"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
@@ -3508,8 +3506,6 @@ Mouser part: 534-1019</description>
 <attribute name="VALUE" x="80.01" y="73.025" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND1" gate="1" x="77.47" y="51.435"/>
-<instance part="P2" gate="G$1" x="46.355" y="51.435"/>
-<instance part="P3" gate="G$1" x="46.355" y="48.895"/>
 <instance part="U$6" gate="G$1" x="159.385" y="132.715"/>
 <instance part="RGB" gate="G$1" x="119.38" y="145.415" rot="R270"/>
 <instance part="SUPPLY1" gate="GND" x="216.535" y="117.475" smashed="yes">
@@ -3629,11 +3625,9 @@ Mouser part: 534-1019</description>
 <wire x1="149.225" y1="112.395" x2="149.86" y2="112.395" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="61.595" y1="48.895" x2="46.355" y2="48.895" width="0.1524" layer="91"/>
-<junction x="46.355" y="48.895"/>
-<pinref part="P3" gate="G$1" pin="1"/>
-<wire x1="46.355" y1="48.895" x2="42.545" y2="48.895" width="0.1524" layer="91"/>
-<label x="48.895" y="48.895" size="1.778" layer="95"/>
+<wire x1="177.8" y1="112.395" x2="172.085" y2="112.395" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="A5-1"/>
+<junction x="172.085" y="112.395"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -3662,11 +3656,9 @@ Mouser part: 534-1019</description>
 <wire x1="149.225" y1="114.935" x2="149.86" y2="114.935" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="62.23" y1="51.435" x2="46.355" y2="51.435" width="0.1524" layer="91"/>
-<junction x="46.355" y="51.435"/>
-<pinref part="P2" gate="G$1" pin="1"/>
-<wire x1="46.355" y1="51.435" x2="42.545" y2="51.435" width="0.1524" layer="91"/>
-<label x="48.895" y="51.435" size="1.778" layer="95"/>
+<wire x1="177.8" y1="114.935" x2="172.085" y2="114.935" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="A4-1"/>
+<junction x="172.085" y="114.935"/>
 </segment>
 </net>
 <net name="SCK" class="0">

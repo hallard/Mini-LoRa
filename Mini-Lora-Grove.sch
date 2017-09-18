@@ -3261,8 +3261,6 @@ Mouser part: 534-1019</description>
 <part name="R4" library="_c2h" deviceset="RESISTOR" device="0805-RES" value="220"/>
 <part name="P1" library="_c2h" deviceset="PAD" device="NORMAL" value="GND"/>
 <part name="BAT2" library="edeca.net-v5" deviceset="BATT-CR123A" device="" value="CR123A"/>
-<part name="P2" library="_c2h" deviceset="PAD" device="NORMAL"/>
-<part name="P3" library="_c2h" deviceset="PAD" device="NORMAL"/>
 <part name="U$6" library="_c2h" deviceset="ARDUINO_PRO_MINI" device=""/>
 <part name="RGB" library="_c2h" deviceset="RGBLED_CA" device="STRAIGHT" value="RGBLED"/>
 <part name="GROVE_I2C" library="Connector -2016" deviceset="GROVE-CONNECTOR-DIP(4P-2.0)" device="" value="4P-2.0"/>
@@ -3359,8 +3357,6 @@ Mouser part: 534-1019</description>
 <attribute name="NAME" x="34.29" y="155.575" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="36.195" y="139.7" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P2" gate="G$1" x="46.355" y="51.435"/>
-<instance part="P3" gate="G$1" x="46.355" y="48.895"/>
 <instance part="U$6" gate="G$1" x="159.385" y="132.715"/>
 <instance part="RGB" gate="G$1" x="119.38" y="145.415" rot="R270"/>
 <instance part="GROVE_I2C" gate="G$1" x="20.32" y="76.2" smashed="yes" rot="R180">
@@ -3475,11 +3471,10 @@ Mouser part: 534-1019</description>
 <wire x1="149.225" y1="112.395" x2="149.86" y2="112.395" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="61.595" y1="48.895" x2="46.355" y2="48.895" width="0.1524" layer="91"/>
-<junction x="46.355" y="48.895"/>
-<pinref part="P3" gate="G$1" pin="1"/>
-<wire x1="46.355" y1="48.895" x2="42.545" y2="48.895" width="0.1524" layer="91"/>
-<label x="48.895" y="48.895" size="1.778" layer="95"/>
+<wire x1="177.8" y1="112.395" x2="172.085" y2="112.395" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="A5-1"/>
+<junction x="172.085" y="112.395"/>
+<label x="173.99" y="112.395" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -3508,11 +3503,10 @@ Mouser part: 534-1019</description>
 <wire x1="149.225" y1="114.935" x2="149.86" y2="114.935" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="62.23" y1="51.435" x2="46.355" y2="51.435" width="0.1524" layer="91"/>
-<junction x="46.355" y="51.435"/>
-<pinref part="P2" gate="G$1" pin="1"/>
-<wire x1="46.355" y1="51.435" x2="42.545" y2="51.435" width="0.1524" layer="91"/>
-<label x="48.895" y="51.435" size="1.778" layer="95"/>
+<wire x1="177.8" y1="114.935" x2="172.085" y2="114.935" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="A4-1"/>
+<junction x="172.085" y="114.935"/>
+<label x="173.99" y="114.935" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">

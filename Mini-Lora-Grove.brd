@@ -8,15 +8,15 @@
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="3" fill="1" visible="yes" active="yes"/>
@@ -24,8 +24,8 @@
 <layer number="24" name="bOrigins" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="48" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="40" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
@@ -48,7 +48,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -190,7 +190,7 @@
 <text x="33.01475" y="15.337" size="0.889" layer="26" font="vector" ratio="15" rot="MR90">SCL</text>
 <text x="33.01475" y="7.717" size="0.889" layer="26" font="vector" ratio="15" rot="MR90">GND</text>
 <text x="33.01475" y="10.257" size="0.889" layer="26" font="vector" ratio="15" rot="MR90">3V3</text>
-<text x="52.60975" y="1.778" size="1.6764" layer="26" font="vector" ratio="15" rot="MR180" align="center">Mini-Lora V1.1</text>
+<text x="52.60975" y="1.778" size="1.6764" layer="26" font="vector" ratio="15" rot="MR180" align="center">Mini-Lora V1.1a</text>
 <text x="22.57425" y="20.60575" size="1.6764" layer="25" font="vector" ratio="15" align="center">Mini-Lora</text>
 <text x="23.23925" y="6.02725" size="1.27" layer="26" font="vector" ratio="15" rot="MR0">RFM95</text>
 <wire x1="64.77" y1="3.81" x2="44.45" y2="3.81" width="0.254" layer="21"/>
@@ -357,7 +357,7 @@
 <text x="20.0025" y="23.59025" size="0.889" layer="25" font="vector" ratio="15" rot="R270" align="center">GND</text>
 <text x="62.22475" y="12.6065" size="1.4224" layer="25" font="vector" ratio="15" rot="R90" align="center">GND</text>
 <text x="7.86875" y="12.8605" size="1.4224" layer="25" font="vector" ratio="15" rot="R90" align="center">3V3</text>
-<text x="29.81325" y="1.55575" size="1.6764" layer="25" font="vector" ratio="15" align="center">V1.1</text>
+<text x="29.17825" y="1.55575" size="1.6764" layer="25" font="vector" ratio="15" align="center">V1.1a</text>
 <text x="20.0025" y="23.59025" size="0.889" layer="26" font="vector" ratio="15" rot="MR90" align="center">GND</text>
 <text x="25.8445" y="23.59025" size="0.889" layer="26" font="vector" ratio="15" rot="MR90" align="center">3V3</text>
 <text x="16.03375" y="8.4455" size="0.889" layer="25" font="vector" ratio="15" align="center">D9
@@ -1349,8 +1349,6 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <element name="P1" library="_c2h" package="PAD" value="GND" x="21.59" y="23.495"/>
 <element name="U$3" library="_c2h" package="LOGO_CH2I_75MM" value="" x="23.749" y="12.319" smashed="yes"/>
 <element name="BAT2" library="edeca.net-v5" package="KEYSTONE-2/3A" value="CR123A" x="30.861" y="12.7" smashed="yes" rot="MR270"/>
-<element name="P2" library="_c2h" package="PAD" value="PADNORMAL" x="35.56" y="16.51"/>
-<element name="P3" library="_c2h" package="PAD" value="PADNORMAL" x="35.56" y="13.97" smashed="yes"/>
 <element name="U$6" library="_c2h" package="ARDUINO_PRO_MINI" value="ARDUINO_PRO_MINI" x="50.8" y="12.7" smashed="yes" rot="R270"/>
 <element name="RGB" library="_c2h" package="LED5MMRGB_ST" value="RGBLED" x="11.811" y="3.556" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.795" y="6.731" size="0.889" layer="21" font="vector" ratio="15"/>
@@ -1416,68 +1414,19 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <via x="17.8435" y="18.9865" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <contactref element="BAT2" pad="-VE"/>
 <via x="21.7805" y="9.398" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<via x="35.433" y="10.414" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<via x="36.703" y="9.144" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <contactref element="U$6" pad="23"/>
 <contactref element="U$6" pad="4"/>
 <via x="37.7825" y="16.764" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <contactref element="GROVE_I2C" pad="4"/>
-<wire x1="65.68" y1="12.69" x2="66.421" y2="17.7165" width="0" layer="19" extent="1-1"/>
-<wire x1="66.3575" y1="7.62" x2="65.68" y2="12.69" width="0" layer="19" extent="1-1"/>
-<wire x1="60.452" y1="12.6365" x2="65.68" y2="12.69" width="0" layer="19" extent="1-1"/>
-<wire x1="54.5465" y1="12.7" x2="60.452" y2="12.6365" width="0" layer="19" extent="1-1"/>
-<wire x1="49.861" y1="12.7" x2="54.5465" y2="12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="44.7675" y1="15.24" x2="49.861" y2="12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="42.7101" y1="13.081" x2="44.7675" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="39.894" y1="16.51" x2="42.7101" y2="13.081" width="0" layer="19" extent="1-1"/>
-<wire x1="37.7825" y1="16.764" x2="39.894" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="45.4025" y1="8.255" x2="42.7101" y2="13.081" width="0" layer="19" extent="1-1"/>
-<wire x1="60.96" y1="5.08" x2="66.3575" y2="7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="35.433" y1="10.414" x2="37.7825" y2="16.764" width="0" layer="19" extent="1-1"/>
-<wire x1="32.004" y1="9.7" x2="35.433" y2="10.414" width="0" layer="19" extent="1-1"/>
-<wire x1="30.5435" y1="8.509" x2="32.004" y2="9.7" width="0" layer="19" extent="1-1"/>
-<wire x1="30.114" y1="4.7635" x2="30.5435" y2="8.509" width="0" layer="19" extent="16-16"/>
-<wire x1="33.655" y1="4.445" x2="30.114" y2="4.7635" width="0" layer="19" extent="16-16"/>
-<wire x1="25.0825" y1="8.89" x2="30.5435" y2="8.509" width="0" layer="19" extent="1-1"/>
-<wire x1="21.7805" y1="9.398" x2="25.0825" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="26.3525" y1="14.859" x2="25.0825" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="16.114" y1="4.756" x2="21.7805" y2="9.398" width="0" layer="19" extent="16-16"/>
-<wire x1="50.7365" y1="3.048" x2="45.4025" y2="8.255" width="0" layer="19" extent="1-1"/>
-<wire x1="55.88" y1="20.32" x2="54.5465" y2="12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="17.669" y1="17.145" x2="21.7805" y2="9.398" width="0" layer="19" extent="1-1"/>
-<wire x1="17.8435" y1="18.9865" x2="17.669" y2="17.145" width="0" layer="19" extent="1-1"/>
-<wire x1="16.5735" y1="18.9865" x2="17.8435" y2="18.9865" width="0" layer="19" extent="1-1"/>
-<wire x1="15.3035" y1="18.9865" x2="16.5735" y2="18.9865" width="0" layer="19" extent="1-1"/>
-<wire x1="14.0335" y1="18.9865" x2="15.3035" y2="18.9865" width="0" layer="19" extent="1-1"/>
-<wire x1="13.6525" y1="17.907" x2="14.0335" y2="18.9865" width="0" layer="19" extent="1-1"/>
-<wire x1="12.3825" y1="17.907" x2="13.6525" y2="17.907" width="0" layer="19" extent="1-1"/>
-<wire x1="11.1125" y1="17.907" x2="12.3825" y2="17.907" width="0" layer="19" extent="1-1"/>
-<wire x1="9.8425" y1="17.907" x2="11.1125" y2="17.907" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="20.32" x2="14.0335" y2="18.9865" width="0" layer="19" extent="1-1"/>
-<wire x1="11.1125" y1="19.431" x2="11.1125" y2="17.907" width="0" layer="19" extent="1-1"/>
-<wire x1="10.9855" y1="20.50075" x2="11.1125" y2="19.431" width="0" layer="19" extent="1-1"/>
-<wire x1="18.114" y1="20.7635" x2="17.8435" y2="18.9865" width="0" layer="19" extent="16-16"/>
-<wire x1="18.034" y1="22.479" x2="18.114" y2="20.7635" width="0" layer="19" extent="16-16"/>
-<wire x1="19.304" y1="22.479" x2="18.034" y2="22.479" width="0" layer="19" extent="1-1"/>
-<wire x1="16.764" y1="22.479" x2="18.034" y2="22.479" width="0" layer="19" extent="1-1"/>
-<wire x1="15.494" y1="22.479" x2="16.764" y2="22.479" width="0" layer="19" extent="1-1"/>
-<wire x1="14.859" y1="23.114" x2="15.494" y2="22.479" width="0" layer="19" extent="1-1"/>
-<wire x1="14.224" y1="23.749" x2="14.859" y2="23.114" width="0" layer="19" extent="1-1"/>
-<wire x1="14.224" y1="24.7015" x2="14.224" y2="23.749" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="23.495" x2="19.304" y2="22.479" width="0" layer="19" extent="1-1"/>
-<wire x1="10.9855" y1="23.44125" x2="10.9855" y2="20.50075" width="0" layer="19" extent="1-1"/>
-<wire x1="11.1125" y1="24.511" x2="10.9855" y2="23.44125" width="0" layer="19" extent="1-1"/>
-<wire x1="30.972" y1="23.495" x2="21.59" y2="23.495" width="0" layer="19" extent="1-1"/>
-<wire x1="3.7465" y1="9.398" x2="9.8425" y2="17.907" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="R2" pad="1"/>
 <contactref element="U1" pad="1"/>
-<contactref element="P3" pad="1"/>
 <contactref element="U$6" pad="A5-0"/>
 <wire x1="42.7101" y1="12.1412" x2="42.7101" y2="11.5951" width="0.3048" layer="1"/>
 <wire x1="42.7101" y1="11.5951" x2="41.91" y2="10.795" width="0.3048" layer="1"/>
 <wire x1="38.735" y1="10.795" x2="41.91" y2="10.795" width="0.3048" layer="1"/>
-<wire x1="35.56" y1="13.97" x2="38.735" y2="10.795" width="0.3048" layer="1"/>
 <wire x1="27.305" y1="12.7" x2="27.305" y2="7.62" width="0.3048" layer="1"/>
 <wire x1="27.305" y1="7.62" x2="28.21" y2="6.715" width="0.3048" layer="1"/>
 <wire x1="29.21" y1="6.715" x2="28.21" y2="6.715" width="0.3048" layer="1"/>
@@ -1486,14 +1435,18 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="30.305" y1="15.7" x2="27.305" y2="12.7" width="0.3048" layer="1"/>
 <wire x1="32.004" y1="15.7" x2="32.814" y2="15.7" width="0.3048" layer="1"/>
 <wire x1="32.814" y1="15.7" x2="34.544" y2="13.97" width="0.3048" layer="1"/>
+<contactref element="U$6" pad="A5-1"/>
+<wire x1="38.735" y1="10.795" x2="35.56" y2="13.97" width="0.3048" layer="1"/>
 <wire x1="34.544" y1="13.97" x2="35.56" y2="13.97" width="0.3048" layer="1"/>
+<wire x1="54.76875" y1="7.9375" x2="54.76875" y2="8.73125" width="0.3048" layer="1"/>
+<wire x1="54.76875" y1="8.73125" x2="53.975" y2="9.525" width="0.3048" layer="1"/>
+<wire x1="53.975" y1="9.525" x2="43.18" y2="9.525" width="0.3048" layer="1"/>
+<wire x1="43.18" y1="9.525" x2="41.91" y2="10.795" width="0.3048" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="R1" pad="1"/>
 <contactref element="U1" pad="3"/>
 <wire x1="42.6593" y1="13.97" x2="42.7101" y2="14.0208" width="0.3048" layer="1"/>
-<contactref element="P2" pad="1"/>
-<wire x1="35.56" y1="16.51" x2="39.0525" y2="13.0175" width="0.3048" layer="1"/>
 <contactref element="U$6" pad="A4-0"/>
 <wire x1="39.0525" y1="13.0175" x2="40.8305" y2="13.0175" width="0.3048" layer="1"/>
 <wire x1="40.8305" y1="13.0175" x2="41.8338" y2="14.0208" width="0.3048" layer="1"/>
@@ -1504,10 +1457,17 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <via x="26.797" y="13.716" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <wire x1="26.797" y1="13.716" x2="31.988" y2="13.716" width="0.3048" layer="16"/>
 <wire x1="31.988" y1="13.716" x2="32.004" y2="13.7" width="0.3048" layer="16"/>
-<wire x1="32.004" y1="13.7" x2="32.496" y2="13.7" width="0.3048" layer="16"/>
-<wire x1="32.496" y1="13.7" x2="35.052" y2="16.256" width="0.3048" layer="16"/>
-<wire x1="35.052" y1="16.256" x2="35.306" y2="16.256" width="0.3048" layer="16"/>
-<wire x1="35.306" y1="16.256" x2="35.56" y2="16.51" width="0.3048" layer="16"/>
+<contactref element="U$6" pad="A4-1"/>
+<wire x1="39.0525" y1="13.0175" x2="35.56" y2="16.51" width="0.3048" layer="1"/>
+<wire x1="32.004" y1="13.7" x2="32.75" y2="13.7" width="0.3048" layer="16"/>
+<wire x1="32.75" y1="13.7" x2="35.56" y2="16.51" width="0.3048" layer="16"/>
+<wire x1="52.22875" y1="7.9375" x2="51.7525" y2="7.9375" width="0.3048" layer="1"/>
+<wire x1="51.7525" y1="7.9375" x2="50.8" y2="6.985" width="0.3048" layer="1"/>
+<wire x1="50.8" y1="6.985" x2="36.83" y2="6.985" width="0.3048" layer="1"/>
+<wire x1="36.83" y1="6.985" x2="34.925" y2="8.89" width="0.3048" layer="1"/>
+<wire x1="34.925" y1="8.89" x2="34.925" y2="11.525" width="0.3048" layer="1"/>
+<wire x1="34.925" y1="11.525" x2="32.75" y2="13.7" width="0.3048" layer="1"/>
+<wire x1="32.75" y1="13.7" x2="32.004" y2="13.7" width="0.3048" layer="1"/>
 </signal>
 <signal name="SCK">
 <contactref element="U$5" pad="SCK"/>
