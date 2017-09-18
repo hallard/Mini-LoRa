@@ -16,6 +16,8 @@ Then I decided to add some funky stuff like:
 - Various Battery Connector and type AA/A/18650/CR123
 - Two A4/A5 pins position so you can use different Mini Clone (see BOM)
 
+**On version 1.1, I2C A4/A5 (the ones bottom right) are not connected**, thanks to tkerby who detected this point on [issue #1](https://github.com/hallard/Mini-LoRa/issues/1).
+This is now fixed on version 1.1a. Pcbs.io PCB have been updated.
 
 Detailed Description
 ====================
@@ -74,8 +76,8 @@ Boards
 
 You can order PCBs of this board at [PCBs.io][3]
 
-- [V1.1](https://PCBs.io/share/8AGb2) Classic I2C connector
-- [V1.1](https://PCBs.io/share/zjKdY) Grove I2C connector
+- [V1.1a](https://PCBs.io/share/8AGb2) Classic I2C connector
+- [V1.1a](https://PCBs.io/share/zjKdY) Grove I2C connector
 - [V1.0](https://PCBs.io/share/r3LdE)
 
  PCBs.io give me some reward when you order my designed boards from their site. This is pretty good, because I can use these rewards to create and design new boards and order boards for a discounted price, so if you don't care about PCB manufacturer please use PCBs.io.
@@ -112,6 +114,15 @@ use only what you need dependings on what you want to do.
     - 3.0V Lithium [CR123](https://www.digikey.com/product-detail/en/panasonic-bsg/CR-123PE-BN/P703-ND/7064720)
     - 3.6V Lithium Thionyle Chloride [2600mAh](http://fr.rs-online.com/web/p/piles-aa/2019438/)
     - 3.6V Lithium Thionyle Chloride [3600mAh](http://fr.rs-online.com/web/p/piles-aa/778-1087/)
+- Capacitors
+    - C1 100nF 0805                                                                                                                  
+    - C1 10uF 0805                                                                                                                  
+- Resistors
+    - R1, R2 4.7K 0805                                                                                                                  
+    - R3 10K 0805                                                                                                                  
+    - R4 220 0805                                                                                                                  
+    - R5 100 0805                                                                                                                  
+    - R6 100 0805                                                                                                                  
 
 
 License
