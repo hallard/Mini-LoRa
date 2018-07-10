@@ -88,17 +88,17 @@ Boards
 <img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-V12-bot.jpg">
 
 
-**Top & bottom side Grove**
+**Top & bottom side Grove V1.1**
 
 <img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-Grove-top.jpg">
 <img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-Grove-bot.jpg">
 
 You can order PCBs of this board at [PCBs.io][3]
 
-- [V1.2](https://PCBs.io/share/r1a3J) Classic I2C connector
-- [V1.1a](https://PCBs.io/share/8AGb2) Classic I2C connector
-- [V1.1a](https://PCBs.io/share/zjKdY) Grove I2C connector
-- [V1.0](https://PCBs.io/share/r3LdE)
+- [V1.2](https://www.PCBs.io/share/r1a3J) Classic I2C connector
+- [V1.1a](https://www.PCBs.io/share/8AGb2) Classic I2C connector
+- [V1.1a](https://www.PCBs.io/share/zjKdY) Grove I2C connector
+- [V1.0](https://www.PCBs.io/share/r3LdE)
 
  PCBs.io give me some reward when you order my designed boards from their site. This is pretty good, because I can use these rewards to create and design new boards and order boards for a discounted price, so if you don't care about PCB manufacturer please use PCBs.io.
 
@@ -150,7 +150,7 @@ Misc
 See TTN dedicated [post](https://www.thethingsnetwork.org/forum/t/8059) and news and other projects on my [blog][1] 
  
 [1]: https://hallard.me
-[3]: https://PCBs.io
+[3]: https://www.PCBs.io
 
 [20]: http://www.seeedstudio.com/depot/index.php?main_page=opl_info&opl_id=4
 [21]: http://www.ebay.com/itm/170578495165
