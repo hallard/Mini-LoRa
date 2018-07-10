@@ -12,7 +12,7 @@ Then I decided to add some funky stuff like:
 - Footprint for Ultra Low Power controller TPL5110
 - R9 1206 or PTH Footprint to easily change resistor and thus delay between wake
 - renamed silk pin to function instead of arduino name
-- Optionnal Tactile Switch to wake from TPL5110
+- Optional Tactile Switch to wake from TPL5110
 
 **all version**
 
@@ -21,7 +21,7 @@ Then I decided to add some funky stuff like:
 - Footprint for Lora RFM95
 - Footprint for a Microchip 24AA02E64T EUID 
 - RBG Led
-- Optionnal Tactile Switch
+- Optional Tactile Switch
 - Various Battery Connector and type AA/A/18650/CR123
 - Two A4/A5 pins position so you can use different Mini Clone (see BOM)
 
