@@ -7,6 +7,15 @@ At the begining this PCB has been created to help wiring between Arduino Mini an
 
 Then I decided to add some funky stuff like:
 
+**new in V1.2**
+
+- Footprint for Ultra Low Power controller TPL5110
+- R9 1206 or PTH Footprint to easily change resistor and thus delay between wake
+- renamed silk pin to function instead of arduino name
+- Optionnal Tactile Switch to wake from TPL5110
+
+**all version**
+
 - Easy to build and solder, 0805 or PTH components
 - I2C connector (or grove) to be able to add internal/external sensors such as BME280, SI7021 or HTU21D
 - Footprint for Lora RFM95
@@ -40,9 +49,19 @@ No specific documentation for now, it's just a kind of wiring helper as follow
  D9          <----> Led Red
  D6          <----> Led Green
  D5          <----> Led Blue
+ A1          <----> DONE of TPL5110 (to indicate we done)
+ A2          <----> DRVN of TPL5110 (pulse out to wake CPU)
  SDA (A4)    <----> I2C SCL Connector
  SCL (A5)    <----> I2C SDA Connector
 ```
+
+R9 determine Wake Time interval from TPL5110 as follow 
+  - 170K 2 hours
+  - 120K ~1 hour
+  - 100K ~35 min
+  - 47K ~6 min
+
+please read TPL5110 [datasheet](http://www.ti.com/lit/ds/symlink/tpl5110.pdf) for more information or Adafruit TPL5110 Learning [page](https://learn.adafruit.com/adafruit-tpl5110-power-timer-breakout/)
 
 Installation
 ============
@@ -63,10 +82,10 @@ Schematic
 Boards 
 ======
 
-**Top & bottom side**
+**Top & bottom side V1.2**
 
-<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-top.jpg">
-<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-bot.jpg">
+<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-V12-top.jpg">
+<img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-V12-bot.jpg">
 
 
 **Top & bottom side Grove**
@@ -76,6 +95,7 @@ Boards
 
 You can order PCBs of this board at [PCBs.io][3]
 
+- [V1.2](https://PCBs.io/share/r1a3J) Classic I2C connector
 - [V1.1a](https://PCBs.io/share/8AGb2) Classic I2C connector
 - [V1.1a](https://PCBs.io/share/zjKdY) Grove I2C connector
 - [V1.0](https://PCBs.io/share/r3LdE)
@@ -97,14 +117,15 @@ Bill Of Material
 Nothing fancy, all components are 0805 and/or PTH and can be ordered almost anywhere (digikey, mouser, radiospare, ...). 
 use only what you need dependings on what you want to do. 
 
+
+Octopart [BOM file](https://octopart.com/bom-tool/MsqCYjTr)
+
+Example of option parts, and other source
 - Arduino Pro Mini (just take care your board has A4/A5 at the correct place, some clone are not)
-    - [Sparkfun](https://www.sparkfun.com/products/11114) 3V3 8MHz
     - [Geekcreit](https://www.banggood.com/Pro-Mini-ATMEGA328P-5V16M-Improved-Version-Module-For-Arduino-p-985618.html) 5V 16MHz (power it with 3.3V and/or remove regulator)
     - [ebay](http://www.ebay.com/itm/201562503063) 3V3 8MHz
 - [RFM95](https://www.digikey.com/product-detail/en/rf-solutions/RFM95W-868S2/RFM95W-868S2-ND/5051755) (check Frequency)
-- Microchip [24AA02E64T](https://www.digikey.com/product-detail/en/microchip-technology/24AA02E64T-I-OT/24AA02E64T-I-OTCT-ND/4292622) EUID 
-- Common Anode [RBG Led](https://www.digikey.com/product-detail/en/kingbright/WP154A4SUREQBFZGW/754-1492-ND/2261457), search `diffused 5MM RGB LED common anode` on ebay
-- C&K [Tactile Switch](https://www.digikey.com/product-detail/en/c-k/PTS810-SJK-250-SMTR-LFS/CKN10503CT-ND/4176675)
+- Common Anode RGB Led, search `diffused 5MM RGB LED common anode` on ebay
 - Battery Connector format
     - Holder [AA](https://www.digikey.com/product-detail/en/mpd-memory-protection-devices/BCAAPC/BCAAPC-ND/232723)
     - Clip [AA](https://www.digikey.com/product-detail/en/mpd-memory-protection-devices/BK-92/BK-92-ND/2079904)
@@ -114,16 +135,6 @@ use only what you need dependings on what you want to do.
     - 3.0V Lithium [CR123](https://www.digikey.com/product-detail/en/panasonic-bsg/CR-123PE-BN/P703-ND/7064720)
     - 3.6V Lithium Thionyle Chloride [2600mAh](http://fr.rs-online.com/web/p/piles-aa/2019438/)
     - 3.6V Lithium Thionyle Chloride [3600mAh](http://fr.rs-online.com/web/p/piles-aa/778-1087/)
-- Capacitors
-    - C1 100nF 0805                                                                                                                  
-    - C1 10uF 0805                                                                                                                  
-- Resistors
-    - R1, R2 4.7K 0805                                                                                                                  
-    - R3 10K 0805                                                                                                                  
-    - R4 220 0805                                                                                                                  
-    - R5 100 0805                                                                                                                  
-    - R6 100 0805                                                                                                                  
-
 
 License
 =======
@@ -162,3 +173,5 @@ See TTN dedicated [post](https://www.thethingsnetwork.org/forum/t/8059) and news
 [46]: http://www.ebay.com/itm/391462862706
 [47]: http://www.ebay.com/itm/232153789354?var=531358445664
 [48]: http://www.ebay.com/itm/301856945402
+
+[50]: https://octopart.com/bom-tool/MsqCYjTr
