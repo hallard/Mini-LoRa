@@ -74,6 +74,8 @@ You may need to disable debug of LMIC stack if missing.
 
 I'm also changing the Bootloader to use optiboot and win 1.5K of flash code and setup the Brown Out Detect to 1.8V to be able to works under 2.7V. Please see this [Pro-Mini-ICSP-FTDI](https://github.com/hallard/Pro-Mini-ICSP-FTDI) repo if you need to flash your Arduino Pro Mini with this bootloader. You'll see in [bootloader](https://github.com/hallard/Pro-Mini-ICSP-FTDI/tree/master/bootloaders) folder, I've compiled some for various Speed and for 8MHz and 16MHz Crystal (I use the 250KBPS one, it's fast and reliable).
 
+I've also created custom board definition for Arduino IDE so if using my bootloader, you'll have the board clock and serial speed selection in Arduino IDE, it located [here](https://github.com/ch2i/ch2i-arduino-boards)
+
 Schematic
 =========
 
