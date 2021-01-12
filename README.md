@@ -95,14 +95,25 @@ Boards
 <img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-Grove-top.jpg">
 <img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-Grove-bot.jpg">
 
-You can order PCBs of this board at [PCBs.io][3]
+~~You can order PCBs of this board at [PCBs.io][3]~~
 
-- [V1.2](https://www.PCBs.io/share/r1a3J) Classic I2C connector
-- [V1.1a](https://www.PCBs.io/share/8AGb2) Classic I2C connector
-- [V1.1a](https://www.PCBs.io/share/zjKdY) Grove I2C connector
-- [V1.0](https://www.PCBs.io/share/r3LdE)
+- ~~[V1.2](https://www.PCBs.io/share/r1a3J) Classic I2C connector~~
+- ~~[V1.1a](https://www.PCBs.io/share/8AGb2) Classic I2C connector~~
+- ~~[V1.1a](https://www.PCBs.io/share/zjKdY) Grove I2C connector~~
+- ~~[V1.0](https://www.PCBs.io/share/r3LdE)~~
 
- PCBs.io give me some reward when you order my designed boards from their site. This is pretty good, because I can use these rewards to create and design new boards and order boards for a discounted price, so if you don't care about PCB manufacturer please use PCBs.io.
+ ~~PCBs.io give me some reward when you order my designed boards from their site. This is pretty good, because I can use these rewards to create and design new boards and order boards for a discounted price, so if you don't care about PCB manufacturer please use PCBs.io.~~
+
+Looks like PCBs.io is gone, I do not have any rewards from PCBs.io since August 2020 and my free order placed after are still not received, so my guess they are not on business anymore.
+
+So you can order the board on [oshpark](https://oshpark.com). 
+
+- [V1.3](https://oshpark.com/shared_projects/Fyrdjw5E) Classic I2C connector
+- [V1.1a](https://oshpark.com/shared_projects/TSE77q5q) Groove I2C connector
+
+It's a pitty after several discuss with OSHPark that I can't have any rewards for each people ordering my boards, this would allow me to order free PCB for shared projects and create new ones. For information my shared boards generated a total of **$285 162.00** orders at PCBs.io in 4 years, not bad at all :-)
+
+Hoping one day OSHparks will thanks me giving them this market. 
 
 Assembled boards with sensors
 =============================
