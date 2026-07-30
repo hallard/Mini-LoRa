@@ -3,7 +3,7 @@ Mini Lora Node, Arduino Mini LoraWAN sensor
 
 <img src="https://github.com/hallard/Mini-LoRa/raw/master/pictures/Mini-LoRa-18650-Clip.jpg">
 
-At the begining this PCB has been created to help wiring between Arduino Mini and RFM95 Lora module and to be able to put the whole thing powered by various Batteries type (AA, 18650, A, ...).
+At the beginning this PCB has been created to help wiring between Arduino Mini and RFM95 Lora module and to be able to put the whole thing powered by various Batteries type (AA, 18650, A, ...).
 
 Then I decided to add some funky stuff like:
 
